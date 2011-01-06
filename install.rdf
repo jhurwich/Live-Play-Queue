@@ -7,17 +7,12 @@
     <em:name>Live Play Queue</em:name>
     <em:version>0.8</em:version>
     <em:creator>jhawk</em:creator>
+		<em:iconURL>chrome://live-play-queue/skin/favicon.png</em:iconURL>
 
 
-    <em:description>A more interactive play queue</em:description>
-
-
-
-
+    <em:description>Directs all playback to a more interactive play queue</em:description>
 
     <em:optionsURL>chrome://live-play-queue/content/options.xul</em:optionsURL>
-
-
 
     <em:targetApplication>
       <Description>
