@@ -5,7 +5,7 @@
     <em:id>{84524abe-4dad-400f-b8f8-c22590a95146}</em:id>
     <em:type>2</em:type>
     <em:name>Live Play Queue</em:name>
-    <em:version>0.8</em:version>
+    <em:version>0.81</em:version>
     <em:creator>jhawk</em:creator>
 		<em:iconURL>chrome://live-play-queue/skin/favicon.png</em:iconURL>
 
