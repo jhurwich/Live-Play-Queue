@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+     xmlns:songbird="http://www.songbirdnest.com/2007/addon-metadata-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{84524abe-4dad-400f-b8f8-c22590a95146}</em:id>
+    <em:type>2</em:type>
+    <em:name>Live Play Queue</em:name>
+    <em:version>0.8</em:version>
+    <em:creator>jhawk</em:creator>
+
+
+    <em:description>A more interactive play queue</em:description>
+
+
+
+
+
+    <em:optionsURL>chrome://live-play-queue/content/options.xul</em:optionsURL>
+
+
+
+    <em:targetApplication>
+      <Description>
+        <em:id>songbird@songbirdnest.com</em:id>
+        <em:minVersion>1.10.0a</em:minVersion>
+        <em:maxVersion>1.10.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+  </Description>
+</RDF>

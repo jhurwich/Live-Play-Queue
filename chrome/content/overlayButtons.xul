@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "chrome://songbird/locale/songbird.dtd" >
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        id="songbird_main_overlay"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <xul:hbox id="shuffle_repeat_box">
+
+    <xul:stack id="live-queue-shuffle-button" 
+               oncommand="LivePlayQueue.Controller.onShuffle();"
+               position="1"> 
+      <xul:button id="live-queue-shuffle-button-off"
+                  class="sb-player-shuffle-button-off sb-player-button"
+                  tooltiptext="&tooltip.control.shuf_off;">
+        <xul:observes type="dataremote"
+                      key="livequeue.shuffled" 
+                      attribute="hidden"
+                      onchange="return parseInt( value ) != 0" /> 
+      </xul:button>
+      <xul:button id="live-queue-shuffle-button-on"
+                  class="sb-player-shuffle-button-on sb-player-button"
+                  tooltiptext="&tooltip.control.shuffle;">
+        <xul:observes type="dataremote"
+                      key="livequeue.shuffled" 
+                      attribute="hidden"
+                      onchange="return parseInt( value ) != 1" /> 
+      </xul:button>
+      <xul:observes type="dataremote"
+                    key="livequeue.stealshuffle" 
+                    attribute="hidden"
+                    onchange="return parseInt( value ) != 1" /> 
+    </xul:stack>
+  </xul:hbox>
+  
+  <xul:stack id="sb-player-shuffle-button">
+    <xul:observes type="dataremote"
+                  key="livequeue.stealshuffle" 
+                  attribute="hidden"
+                  onchange="return parseInt( value ) != 0" />  
+  </xul:stack>
+
+</overlay>

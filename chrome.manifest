@@ -1,0 +1,8 @@
+content live-play-queue  chrome/content/
+locale  live-play-queue  en-US  chrome/locale/en-US/
+skin    live-play-queue  classic/1.0 chrome/skin/
+
+
+overlay chrome://songbird/content/xul/layoutWithBrowserOverlay.xul chrome://live-play-queue/content/scripts-overlay.xul
+overlay windowtype:Songbird:Main chrome://live-play-queue/content/overlayButtons.xul
+
